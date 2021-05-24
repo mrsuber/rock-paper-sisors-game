@@ -1,0 +1,11 @@
+/* body{background-color: gray;} */
+/* JSExFiles.css */
+@CHARSET "UTF-8";
+
+.highlight {
+  color: red;
+}
+
+.bold{
+  text-decoration: underline;
+}

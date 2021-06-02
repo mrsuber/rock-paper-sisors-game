@@ -1,12 +1,15 @@
 
 let count=0;
+let comp_win=0;
+let man_win=0;
+
 
 // count= count+1;
   function rock(){
     count= count+1;
     if(count>5){
       count = 1;
-      if (confirm(" Game over. Starting New Game "));
+      if (confirm(" Game over,Computer: "+comp_win+" VS "+ "You: "+man_win+". Starting New Game "));
     }
     let me = ""
     let computer_play= ""
@@ -20,10 +23,12 @@ let count=0;
       computer_play="PAPER";
       win = "WIN"
       me = "LOOSE"
+      comp_win++
     }else{
       computer_play="SCISSORS"
       win = "LOOSE"
       me = "WIN"
+      man_win++
     }
 
 
@@ -40,7 +45,7 @@ let count=0;
     count= count+1;
     if(count>5){
       count = 1;
-      if (confirm(" Game over. Starting New Game "));
+      if (confirm(" Game over,Computer: "+comp_win+ " VS "+ "You: "+man_win+". Starting New Game  "));
     }
     let me = ""
     let computer_play= ""
@@ -50,6 +55,7 @@ let count=0;
        computer_play = "ROCK";
        win = "LOOSE"
        me = "WIN"
+       man_win++
     }else if(computer===2){
       computer_play="PAPER";
       win = "BRAKET"
@@ -58,6 +64,7 @@ let count=0;
       computer_play="SCISSORS"
       win = "WIN"
       me = "LOOSE"
+      comp_win++
     }
 
 
@@ -71,7 +78,7 @@ let count=0;
     count= count+1;
     if(count>5){
       count = 1;
-      if (confirm(" Game over. Starting New Game "));
+      if (confirm("Game over,Computer: "+comp_win+" VS "+" You: "+man_win+". Starting New Game  "));
 
     }
     let me = ""
@@ -82,10 +89,12 @@ let count=0;
      computer_play = "ROCK";
      win = "WIN"
      me = "LOOSE"
+     comp_win++
   }else if(computer===2){
     computer_play="PAPER";
     win = "LOOSE"
     me = "WIN"
+    man_win++
   }else{
     computer_play="SCISSORS"
     win = "BRAKET"
